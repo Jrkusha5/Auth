@@ -1,19 +1,16 @@
+// Looking to send emails in production? Check out our Email API/SMTP product!
+ import { MailtrapClient } from "mailtrap";
+ import dotenv from "dotenv";
 
-import { MailtrapClient } from "mailtrap";
-import dotenv from 'dotenv'
-dotenv.config();
- 
+ dotenv.config();
 
-// const TOKEN = "eb1ec6d0f8d9945ae3bc277ecfd6da8f";
-// const ENDPOINT="https://send.api.mailtrap.io"
 
-export const mailtrapclient = new MailtrapClient({
-  endpoint:process.env.MAILTRAP_ENDPOINT,
+export const mailtrapClient = new MailtrapClient({
   token: process.env.MAILTRAP_TOKEN,
+  testInboxId: 3181209,
 });
 
 export const sender = {
-  email: "hello@demomailtrap.com",
-  name: "kusha",
+  email: "mailtrap@demomailtrap.com",
+  name: "Kusha",
 };
-
