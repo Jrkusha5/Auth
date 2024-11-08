@@ -1,4 +1,4 @@
-// Looking to send emails in production? Check out our Email API/SMTP product!
+
  import { MailtrapClient } from "mailtrap";
  import dotenv from "dotenv";
 
@@ -11,6 +11,6 @@ export const mailtrapClient = new MailtrapClient({
 });
 
 export const sender = {
-  email: "mailtrap@demomailtrap.com",
+  email: "jrkusha5@gmail.com",
   name: "Kusha",
 };
